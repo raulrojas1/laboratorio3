@@ -3,7 +3,7 @@ package com.example.laboratorio3
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.example.laboratorio3.ui.NumberGuessingGameApp
+import com.example.laboratorio3.navigation.NavGraph
 import com.example.laboratorio3.ui.theme.Laboratorio3Theme
 
 class MainActivity : ComponentActivity() {
@@ -11,7 +11,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             Laboratorio3Theme {
-                NumberGuessingGameApp()
+                NavGraph()
             }
         }
     }
